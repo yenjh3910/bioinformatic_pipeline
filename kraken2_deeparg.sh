@@ -14,7 +14,7 @@ bracken -d ~/kraken_db -i ${i}_kraken2.report -o ${i}.F.bracken -w ${i}.F.bracke
 bracken -d ~/kraken_db -i ${i}_kraken2.report -o ${i}.G.bracken -w ${i}.G.bracken.report -r 150 -l G
 bracken -d ~/kraken_db -i ${i}_kraken2.report -o ${i}.S.bracken -w ${i}.S.bracken.report -r 150 -l S
 
-ktImportTaxonomy -q 2 -t 3 ~/kraken2_bracken/${i}_kraken2.output -o ${i}_krona
+ktImportTaxonomy -q 2 -t 3 ~/kraken2_bracken/${i}_kraken2.output -o ~/krona/${i}_krona
 
 #deeparg
 conda activate deeparg_env
