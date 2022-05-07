@@ -84,5 +84,7 @@ conda deactivate
 ## ARG_Ranker
 
 **Usage**   
-```arg_ranker -i arg_ranker_test -kkdb ~/kraken_db -t 16 -o arg_ranker_output```    
-```sh /home/yen/arg_ranker_output/script_output//arg_ranker.sh```
+```   
+arg_ranker -i arg_ranker_test -kkdb ~/kraken_db -t 16 -o arg_ranker_output   
+sh /home/yen/arg_ranker_output/script_output//arg_ranker.sh   
+```
