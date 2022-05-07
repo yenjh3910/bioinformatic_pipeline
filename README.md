@@ -69,7 +69,7 @@ bowtie2-build  ~/megahit/megehit_coassembly/final.contigs.fa coassembly_contig
 ```   
 copy clean reads to $bowtie2    
 ```   
-bowtie2 -x coassembly_contig -1 S1_1.fastq.gz,S3_clean_R1.fastq.gz -2  S1_clean_R2.fastq.gz,S3_clean_R2.fastq.gz | samtools sort -o S1S3.sort.bam    
+bowtie2 -x coassembly_contig -1 {read1_1.fastq.gz,read2_1.fastq.gz,...} -2  {read1_2.fastq.gz,read2_2.fastq.gz,...} | samtools sort -o coassembly.sort.bam    
 ```
 ## GTBDK
 
