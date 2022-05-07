@@ -16,9 +16,4 @@ bracken -d ~/kraken_db -i ~/kraken2_bracken/${i}_kraken2.report -o ~/kraken2_bra
 
 ktImportTaxonomy -q 2 -t 3 ~/kraken2_bracken/${i}_kraken2.output -o ~/krona/${i}_krona
 
-#deeparg
-conda activate deeparg_env
-deeparg short_reads_pipeline --forward_pe_file ~/clean_read/${i}_1.fastq.gz --reverse_pe_file ~/clean_read/${i}_2.fastq.gz --output_file ~/deeparg/${i}_deeparg -d ~/deeparg_download --bowtie_16s_identity 0.85
-source deactivate
-
 done
