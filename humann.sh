@@ -22,5 +22,7 @@ humann_join_tables --input ~/humann --output ~/humann/all_pathcoverage.tsv --fil
 humann_rename_table --input ~/humann/all_genefamilies.tsv --names uniref90 --output ~/humann/all_genefamilies_rename_uniref90.tsv
 
 ##Renormalization
+humann_renorm_table --input ~/humann/all_genefamilies_rename_uniref90.tsv --output ~/humann/all_genefamilies_rename_uniref90_cpm.tsv  --units cpm
+humann_renorm_table --input ~/humann/all_genefamilies_rename_uniref90.tsv --output ~/humann/all_genefamilies_rename_uniref90_relab.tsv  --units relab
 humann_renorm_table --input ~/humann/all_pathabundance.tsv --output ~/humann/all_pathabundance_cpm.tsv  --units cpm
 humann_renorm_table --input ~/humann/all_pathabundance.tsv --output ~/humann/all_pathabundance_relab.tsv  --units relab
