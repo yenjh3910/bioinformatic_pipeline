@@ -13,8 +13,10 @@ Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz
 Put all clean read file in $\~/clean_read   
 Create list in $\~/sample_list/clean_read_list
 
-**Usage**
-```conda activate ~/bioinformatic_shell_script/deeparg.sh```
+**Usage**   
+```conda activate deeparg_env```    
+```~/bioinformatic_shell_script/deeparg.sh```   
+```source deactivate```
 
 ## ARG-OAP
 Clean read name as ${i}_1.fq.gz & ${i}_2.fq.gz  
