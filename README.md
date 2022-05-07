@@ -24,3 +24,13 @@ Create meta-data.txt in $\~/sample_list
 
 **Usage**   
 ```singularity exec -B ~/clean_read ~/arg-oap/argoapv2.5.sif /home/argsoapv2.5/argoap_version2.5 -i ~/clean_read -m ~/sample_list/meta-data.txt -o ~/arg-oap -n 16  -z```
+
+## GTBDK
+
+**Usage**
+
+## ARG_Ranker
+
+**Usage**   
+```arg_ranker -i arg_ranker_test -kkdb ~/kraken_db -t 16 -o arg_ranker_output```    
+```sh /home/yen/arg_ranker_output/script_output//arg_ranker.sh```
