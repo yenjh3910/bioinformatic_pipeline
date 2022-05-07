@@ -46,8 +46,10 @@ conda deactivate
 ### metaWRAP_co-assembly
 Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
 Put all clean read file in $\~/clean_read   
-```   
+```  
+conda activate metawrap-env
 ~/bioinformatic_shell_script/metawrap_coassembly.sh   
+conda deactivate
 ```   
 ### metabat2    
 ```   
