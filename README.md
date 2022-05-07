@@ -65,9 +65,12 @@ megahit -t 16 -m 0.95 -1 ~/clean_read/all_reads_1.fastq -2 ~/clean_read/all_read
 ### metabat2    
 ```   
 cd ~/bowtie2    
-bowtie2-build  ~/megahit/S1S3_megehit/S1S3_final.contigs.fa S1S3_contig   
+bowtie2-build  ~/megahit/megehit_coassembly/final.contigs.fa coassembly_contig   
+```   
+copy clean reads to $bowtie2    
+```   
+bowtie2 -x coassembly_contig -1 S1_1.fastq.gz,S3_clean_R1.fastq.gz -2  S1_clean_R2.fastq.gz,S3_clean_R2.fastq.gz | samtools sort -o S1S3.sort.bam    
 ```
-
 ## GTBDK
 
 **Usage**   
