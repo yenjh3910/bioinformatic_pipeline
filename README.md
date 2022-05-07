@@ -1,12 +1,20 @@
 # Bioinformatic_pipeline
 
-## Kraken & DeepARG
+## Kraken
 Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
 Put all clean read file in $\~/clean_read   
 Create list in $\~/sample_list/clean_read_list 
 
 **Usage**   
-```~/bioinformatic_shell_script/kraken2_deeparg.sh``` 
+```~/bioinformatic_shell_script/kraken2.sh``` 
+
+## DeepARG
+Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
+Put all clean read file in $\~/clean_read   
+Create list in $\~/sample_list/clean_read_list
+
+**Usage**
+```conda activate ~/bioinformatic_shell_script/deeparg.sh```
 
 ## ARG-OAP
 Clean read name as ${i}_1.fq.gz & ${i}_2.fq.gz  
