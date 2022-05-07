@@ -31,6 +31,18 @@ Create meta-data.txt in $\~/sample_list
 singularity exec -B ~/clean_read ~/arg-oap/argoapv2.5.sif /home/argsoapv2.5/argoap_version2.5 -i ~/clean_read -m ~/sample_list/meta-data.txt -o ~/arg-oap -n 16  -z   
 ```
 
+## HUMAnN 3.0   
+Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
+Put all clean read file in $\~/clean_read   
+Create list in $\~/sample_list/clean_read_list
+
+**Usage**   
+```   
+conda activate mpa
+~/bioinformatic_shell_script/humann.sh  
+conda deactivate
+```   
+
 ### metabat2    
 ```   
 cd ~/bowtie2    
