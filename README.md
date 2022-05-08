@@ -58,7 +58,7 @@ rm ~/clean_read/all_reads_1.fastq ~/clean_read/all_reads_2.fastq
 ~/quast-5.1.0rc1/quast.py ~/megahit/megehit_coassembly/final.contigs.fa -o ~/megahit/megehit_coassembly/coassembly_quast
 ```   
 
-## metaWRAP (use fastq.gz except metabat2)
+## metaWRAP (use fastq.gz format except metabat2)
 ### metabat2    
 ```   
 cd ~/bowtie2    
