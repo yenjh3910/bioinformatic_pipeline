@@ -78,7 +78,8 @@ conda activate metawrap-env
 cd ~/metabat2
 runMetaBat.sh ~/megahit/megehit_coassembly/final.contigs.fa ~/bowtie2/coassembly.sort.bam   
 mv {final.contigs.fa.metabat-bins-20220508_131755} metabat2_bins
-rm final.contigs.fa.depth.txt
+rm ~/metabat2/final.contigs.fa.depth.txt  
+mv ~/metabat2/metabat2_bins ~/metawrap_run/bin_refinement
 ```   
 ### metaWRAP binning (maxbin2, concoct)   
  ```    
@@ -86,7 +87,6 @@ rm final.contigs.fa.depth.txt
  ```
 ### metaWRAP refinement  
 ```  
-mv ~/metabat2/metabat2_bins ~/metawrap_run/bin_refinement
 metawrap bin_refinement -o ~/metawrap_run/bin_refinement -t 16 -A metabat2_bins -B maxbin2_bins -C  concoct_bins -c 50 -x 10 -m 0.95  
 ```
 
