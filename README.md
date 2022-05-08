@@ -79,7 +79,12 @@ cd ~/metabat2
 runMetaBat.sh ~/megahit/megehit_coassembly/final.contigs.fa ~/bowtie2/coassembly.sort.bam   
 mv {final.contigs.fa.metabat-bins-20220508_131755} metabat2_bins
 rm final.contigs.fa.depth.txt
-```
+```   
+### metaWRAP binning (maxbin2, concoct)   
+ ```    
+ metawrap binning -o ~/metawrap_run/initial_binning -t 16 -a ~/megahit/megehit_coassembly/final.contigs.fa --maxbin2 --concoct ~/clean_read/*fastq    
+ ```
+
 ## GTBDK
 
 **Usage**   
