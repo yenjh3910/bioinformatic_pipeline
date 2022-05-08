@@ -74,7 +74,7 @@ bowtie2 -x coassembly_contig -1 {read1_1.fastq.gz,read2_1.fastq.gz,...} -2  {rea
 ```
 delete clean reads in $bowtie2    
 ```
-conda activate metawrap-env ???
+conda activate metawrap-env
 cd ~/metabat2
 runMetaBat.sh ~/megahit/megehit_coassembly/final.contigs.fa ~/bowtie2/coassembly.sort.bam
 ```
