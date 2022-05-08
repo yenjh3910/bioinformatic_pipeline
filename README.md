@@ -58,7 +58,7 @@ cat ~/clean_read/*_2.fastq > ~/clean_read/all_reads_2.fastq
 megahit -t 16 -m 0.95 -1 ~/clean_read/all_reads_1.fastq -2 ~/clean_read/all_reads_2.fastq --min-contig-len 1000 -o ~/megahit/megehit_coassembly
 
 #quast
-~/quast-5.1.0rc1/quast.py ~/megahit/megehit_coassembly/final.contigs.fa -o ~/metawrap_coassembly/coassembly_quast
+~/quast-5.1.0rc1/quast.py ~/megahit/megehit_coassembly/final.contigs.fa -o ~/megahit/megehit_coassembly/coassembly_quast
 ```   
 
 ## metaWRAP
