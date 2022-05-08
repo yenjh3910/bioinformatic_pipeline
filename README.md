@@ -88,6 +88,10 @@ mv ~/metabat2/metabat2_bins ~/metawrap_run/bin_refinement
 ### metaWRAP refinement  
 ```  
 metawrap bin_refinement -o ~/metawrap_run/bin_refinement -t 16 -A metabat2_bins -B maxbin2_bins -C  concoct_bins -c 50 -x 10 -m 0.95  
+```  
+### metaWRAP quant_bins
+```
+metawrap quant_bins -b ~/metawrap_run/bin_refinement/metawrap_50_10_bins -o ~/metawrap_run/bin_quant -a ~/megahit/megehit_coassembly/final.contigs.fa ~/clean_read/*fastq -t 16  
 ```
 
 ## GTBDK
