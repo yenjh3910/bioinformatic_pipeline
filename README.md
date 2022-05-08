@@ -75,7 +75,7 @@ cd ~/metabat2
 runMetaBat.sh ~/megahit/megehit_coassembly/final.contigs.fa ~/bowtie2/coassembly.sort.bam   
 mv {final.contigs.fa.metabat-bins-20220508_131755} metabat2_bins
 rm ~/metabat2/final.contigs.fa.depth.txt  
-mv ~/metabat2/metabat2_bins ~/metawrap_run/bin_refinement
+mv ~/metabat2/metabat2_bins ~/metawrap_run/initial_binning
 ```   
 ### metaWRAP binning (maxbin2, concoct)   
  ```    
