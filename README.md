@@ -95,7 +95,7 @@ metawrap quant_bins -b ~/metawrap_run/bin_refinement/metawrap_50_10_bins -o ~/me
 **Usage**   
 ```   
 conda activate gtdbtk-1.5.0   
-gtdbtk classify_wf --genome_dir ~/metaWRAP_run/S1S3_initial_binning/S1S3_bin_refinement/metawrap_50_5_bins -x fa --out_dir S1S3_gtdbdk --scratch_dir scratch.tempory --cpus 16    
+gtdbtk classify_wf --genome_dir ~/metawrap_run/bin_refinement/metawrap_50_10_bins -x fa --out_dir bins_gtdbdk --scratch_dir scratch.tempory --cpus 16    
 conda deactivate
 ```
 
