@@ -71,6 +71,9 @@ bowtie2-build  ~/megahit/megehit_coassembly/final.contigs.fa coassembly_contig
 copy clean reads to $bowtie2    
 ```   
 bowtie2 -x coassembly_contig -1 {read1_1.fastq.gz,read2_1.fastq.gz,...} -2  {read1_2.fastq.gz,read2_2.fastq.gz,...} | samtools sort -o coassembly.sort.bam  
+```
+delete clean reads in $bowtie2    
+```
 conda activate metawrap-env ???
 runMetaBat.sh ~/megahit/megehit_coassembly/final.contigs.fa ~/bowtie2/coassembly.sort.bam
 ```
