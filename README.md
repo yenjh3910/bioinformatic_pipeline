@@ -55,7 +55,8 @@ Put all clean read file in $\~/clean_read
 gunzip ~/clean_read/*.gz
 cat ~/clean_read/*_1.fastq > ~/clean_read/all_reads_1.fastq
 cat ~/clean_read/*_2.fastq > ~/clean_read/all_reads_2.fastq
-megahit -t 16 -m 0.95 -1 ~/clean_read/all_reads_1.fastq -2 ~/clean_read/all_reads_2.fastq --min-contig-len 1000 -o ~/megahit/megehit_coassembly
+megahit -t 16 -m 0.95 -1 ~/clean_read/all_reads_1.fastq -2 ~/clean_read/all_reads_2.fastq --min-contig-len 1000 -o ~/megahit/megehit_coassembly   
+rm ~/clean_read/all_reads_1.fastq ~/clean_read/all_reads_2.fastq
 
 #quast
 ~/quast-5.1.0rc1/quast.py ~/megahit/megehit_coassembly/final.contigs.fa -o ~/megahit/megehit_coassembly/coassembly_quast
