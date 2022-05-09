@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir prodigal
-mkdir cdhit
+mkdir ~/prodigal
+mkdir ~/cdhit
 
 for i in $(<~/sample_list/bin_list)
 do
