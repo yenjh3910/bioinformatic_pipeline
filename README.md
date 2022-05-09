@@ -104,9 +104,8 @@ conda deactivate
 ```  
 
 ## Prodigal & CD-HIT  
-  
-**Usage**  
-Put all bin file in $\~/metawrap_run/bin_refinement/metawrap_50_10_bins    
+Put all bin file in $\~/metawrap_run/bin_refinement/metawrap_50_10_bins  
+**Usage**      
 ```  
 #Edit shell script  
 vim ~/bioinformatic_shell_script/prodigal_cdhit.sh  
