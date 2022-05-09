@@ -1,7 +1,8 @@
 #!/bin/bash
 
-mkdir MGEs
-mkdir ARGs
+mkdir ~/MGEs
+mkdir ~/ARGs
+mkdir ~/abricate
 
 for i in $(<~/sample_list/clean_read_list)
 do
