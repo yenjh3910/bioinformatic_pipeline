@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir ~/megahit/megehit_individual  
+
 for i in $(<~/sample_list/clean_read_list)
 do
 
