@@ -99,7 +99,7 @@ conda deactivate
 **Usage**   
 ```   
 conda activate gtdbtk-1.5.0   
-gtdbtk classify_wf --genome_dir ~/metawrap_run/bin_refinement/metawrap_50_10_bins -x fa --out_dir bins_gtdbdk --scratch_dir scratch.tempory --cpus 16    
+gtdbtk classify_wf --genome_dir ~/metawrap_run/bin_refinement/metawrap_50_10_bins -x fa --out_dir ~/bins_gtdbdk --scratch_dir scratch.tempory --cpus 16    
 conda deactivate
 ```
 
