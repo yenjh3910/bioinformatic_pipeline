@@ -105,6 +105,7 @@ conda deactivate
 
 ## Prodigal & CD-HIT  
 Put all bin file in $\~/metawrap_run/bin_refinement/metawrap_50_10_bins  
+
 **Usage**      
 ```  
 #Edit shell script  
