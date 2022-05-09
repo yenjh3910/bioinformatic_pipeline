@@ -103,6 +103,13 @@ gtdbtk classify_wf --genome_dir ~/metawrap_run/bin_refinement/metawrap_50_10_bin
 conda deactivate
 ```
 
+## MEGAHIT  
+### Individual read assembly  
+**Usage**  
+```  
+~/bioinformatic_shell_script/megahit_individual.sh  
+```
+
 ## ARG_Ranker
 
 **Usage**   
