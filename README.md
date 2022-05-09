@@ -122,6 +122,11 @@ for i in {1..[number]}
 ~/bioinformatic_shell_script/DIAMOND-blastx_abricate.sh  
 ```  
 
+## seqkit_bowtie2_bbmap (genes coverage quantification)
+make sure **$//wsl$/Ubuntu/home/yen/ARG_MGE_manually_gtf/** exist  
+run **DIAMOND_ARG_MGE_VF.R** in R  
+remove 0kb file in $//wsl$/Ubuntu/home/yen/ARG_MGE_manually_gtf/  
+
 ## MEGAHIT  
 ### Individual read assembly  
 Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
