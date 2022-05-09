@@ -101,6 +101,13 @@ conda deactivate
 conda activate gtdbtk-1.5.0   
 gtdbtk classify_wf --genome_dir ~/metawrap_run/bin_refinement/metawrap_50_10_bins -x fa --out_dir ~/bins_gtdbdk --scratch_dir scratch.tempory --cpus 16    
 conda deactivate
+```  
+
+## Prodigal & CD-HIT
+Put all bin file in $\~/metawrap_run/bin_refinement/metawrap_50_10_bins  
+Create bin list in $\~/sample_list/bin_list  
+```
+~/bioinformatic_shell_script/prodigal_cdhit.sh  
 ```
 
 ## MEGAHIT  
