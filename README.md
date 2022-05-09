@@ -113,6 +113,11 @@ Create bin list in $\~/sample_list/bin_list
 ```
 
 ## DIAMOND-blastx (ARGs, MGEs) & abricate (VFs)  
+  
+**Usage**  
+```  
+~/bioinformatic_shell_script/DIAMOND-blastx_abricate.sh  
+```  
 
 ## MEGAHIT  
 ### Individual read assembly  
