@@ -123,9 +123,21 @@ for i in {1..[number]}
 ```  
 
 ## seqkit_bowtie2_bbmap (genes coverage quantification)
+### R script
 make sure **$//wsl$/Ubuntu/home/yen/ARG_MGE_manually_gtf/** exist  
-run **DIAMOND_ARG_MGE_VF.R** in R  
+run **DIAMOND_ARG_MGE_VF.R**  
 remove 0kb file in $//wsl$/Ubuntu/home/yen/ARG_MGE_manually_gtf/  
+### shell script 
+Create  $\~/sample_list/sample_type_list 
+  
+**Usage**  
+```  
+#change for loop i to bin numbers
+vim ~/bioinformatic_shell_script/ARG_MGE_coverage.sh  
+  
+#run
+~/bioinformatic_shell_script/ARG_MGE_coverage.sh  
+```
 
 ## MEGAHIT  
 ### Individual read assembly  
