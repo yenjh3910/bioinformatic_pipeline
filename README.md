@@ -130,6 +130,7 @@ remove 0kb file in $//wsl$/Ubuntu/home/yen/ARG_MGE_manually_gtf/
 ### shell script 
 Create  $\~/sample_list/sample_type_list 
   
+  
 **Usage**  
 ```  
 #change for loop i to bin numbers
