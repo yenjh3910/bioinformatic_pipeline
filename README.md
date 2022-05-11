@@ -103,16 +103,16 @@ gtdbtk classify_wf --genome_dir ~/metawrap_run/bin_refinement/metawrap_50_10_bin
 conda deactivate
 ```  
 
-## Prodigal & CD-HIT  
+## Bin Prodigal & CD-HIT  
 Put all bin file in $\~/metawrap_run/bin_refinement/metawrap_50_10_bins  
 
 **Usage**      
 ```  
 #Edit shell script  
-vim ~/bioinformatic_shell_script/prodigal_cdhit.sh  
+vim ~/bioinformatic_shell_script/bin_prodigal_cdhit.sh  
 for i in {1..[number]}  
 
-~/bioinformatic_shell_script/prodigal_cdhit.sh  
+~/bioinformatic_shell_script/bin_prodigal_cdhit.sh  
 ```
 
 ## DIAMOND-blastx (ARGs, MGEs) & abricate (VFs)  
