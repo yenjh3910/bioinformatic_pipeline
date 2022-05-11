@@ -122,7 +122,7 @@ for i in {1..[number]}
 ~/bioinformatic_shell_script/DIAMOND-blastx_abricate.sh  
 ```  
 
-## seqkit_bowtie2_bbmap (genes coverage quantification)
+## Seqkit_Bowtie2_BBmap (genes coverage quantification)
 ### R script
 make sure **$//wsl$/Ubuntu/home/yen/ARG_MGE_manually_gtf/** exist  
 run **DIAMOND_ARG_MGE_VF.R**  
