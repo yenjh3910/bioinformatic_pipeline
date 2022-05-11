@@ -152,6 +152,15 @@ Create list in $\~/sample_list/clean_read_list
 ```
 
 ## ARG_Ranker
+### merge forward & reverse read  
+Clean read name as ${i}_1.fastq & ${i}_2.fastq  
+Put all clean read file in $\~/clean_read   
+Create list in $\~/sample_list/clean_read_list  
+
+**Usage**  
+```  
+~/bioinformatic_shell_script/merge_read12.sh  
+```   
 
 **Usage**   
 ```   
