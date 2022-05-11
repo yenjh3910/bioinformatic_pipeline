@@ -180,6 +180,13 @@ Create list in $\~/sample_list/clean_read_list
 #### R script
 make sure **$//wsl$/Ubuntu/home/yen/individual_assembly_arg_manually_gff/** exist  
 run **ARG_individual_assembly.R**  
+  
+#### Extract >1000bp contigs
+  
+**Usage**  
+```  
+~/bioinformatic_shell_script/length_1000bp.sh  
+```  
 
 #### PlasFlow
   
