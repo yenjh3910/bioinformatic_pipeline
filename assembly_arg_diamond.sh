@@ -5,7 +5,7 @@ do
 
 #prodigal
 mkdir ~/assembly_prodigal
-prodigal -i ~/megahit/megehit_individual/${i}_assembly/final.contigs.fa -o ~/assembly_prodigal/${i}_assembly.prodigalout -a ~/assembly_prodigal/${i}_assembly.prot -d ~/assembly_prodigal/${i}_assembly.nucl -c -p meta
+prodigal -i ~/megahit/megehit_individual/${i}_assembly/final.contigs.fa -o ~/assembly_prodigal/${i}_assembly.gff -a ~/assembly_prodigal/${i}_assembly.prot -d ~/assembly_prodigal/${i}_assembly.nucl -c -p meta -f gff
 
 #ARG-ARGminer detection
 mkdir ~/individual_assembly_arg
