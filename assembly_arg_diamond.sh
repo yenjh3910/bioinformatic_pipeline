@@ -9,6 +9,6 @@ prodigal -i ~/megahit/megehit_individual/${i}_assembly/final.contigs.fa -o ~/ass
 
 #ARG-ARGminer detection
 mkdir ~/individual_assembly_arg
-diamond blastx -d ~/Database/ARGminer.dmnd -q ~/assembly_prodigal/prodigal/${i}_assembly.nucl --id 50 -p 16 -e 1e-7 -k 1 --query-cover 50 -o ~/individual_assembly_arg/{i}_assembly.nucl.ARGminer.dmnd
+diamond blastx -d ~/Database/ARGminer.dmnd -q ~/assembly_prodigal/${i}_assembly.nucl --id 50 -p 16 -e 1e-7 -k 1 --query-cover 50 -o ~/individual_assembly_arg/{i}_assembly.nucl.ARGminer.dmnd
 
 done
