@@ -140,17 +140,6 @@ vim ~/bioinformatic_shell_script/ARG_MGE_coverage.sh
 ~/bioinformatic_shell_script/ARG_MGE_coverage.sh  
 ```
 
-## MEGAHIT  
-### Individual read assembly  
-Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
-Put all clean read file in $\~/clean_read   
-Create list in $\~/sample_list/clean_read_list  
-
-**Usage**  
-```  
-~/bioinformatic_shell_script/megahit_individual.sh  
-```
-
 ## ARG_Ranker
 ### Merge forward & reverse read  
 Clean read name as ${i}_1.fastq & ${i}_2.fastq  
@@ -170,3 +159,21 @@ mkdir arg_ranker_output
 arg_ranker -i ~/clean_read -kkdb ~/kraken_db -t 16 -o ~/arg_ranker_output   
 sh /home/yen/arg_ranker_output/script_output//arg_ranker.sh   
 ```
+
+## PlasFlow
+### Assembly, Prodigal & ARG blastx
+#### Individual read assembly
+Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
+Put all clean read file in $\~/clean_read   
+Create list in $\~/sample_list/clean_read_list  
+
+**Usage**  
+```  
+~/bioinformatic_shell_script/megahit_individual.sh  
+```  
+#### Prodigal & ARG blastx
+  
+**Usage**  
+```  
+~/bioinformatic_shell_script/assembly_arg_diamond.sh  
+```  
