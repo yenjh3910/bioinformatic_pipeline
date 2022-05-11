@@ -193,5 +193,6 @@ run **ARG_individual_assembly.R**
 **Usage**  
 ```  
 conda activate plasflow
-
+~/bioinformatic_shell_script/plasflow.sh
+conda deactivate
 ```
