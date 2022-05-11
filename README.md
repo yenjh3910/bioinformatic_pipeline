@@ -166,6 +166,7 @@ Create list in $\~/sample_list/clean_read_list
 
 **Usage**   
 ```   
-arg_ranker -i arg_ranker_test -kkdb ~/kraken_db -t 16 -o arg_ranker_output   
+mkdir arg_ranker_output
+arg_ranker -i ~/clean_read -kkdb ~/kraken_db -t 16 -o ~/arg_ranker_output   
 sh /home/yen/arg_ranker_output/script_output//arg_ranker.sh   
 ```
