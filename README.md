@@ -160,7 +160,7 @@ arg_ranker -i ~/clean_read -kkdb ~/kraken_db -t 16 -o ~/arg_ranker_output
 sh /home/yen/arg_ranker_output/script_output//arg_ranker.sh   
 ```
 
-## PlasFlow
+## ARG chromosome & plasmid distribution
 ### Assembly, Prodigal & ARG blastx
 #### Individual read assembly
 Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
@@ -177,3 +177,9 @@ Create list in $\~/sample_list/clean_read_list
 ```  
 ~/bioinformatic_shell_script/assembly_arg_diamond.sh  
 ```  
+#### PlasFlow
+  
+**Usage**  
+```  
+conda activate plasflow
+```
