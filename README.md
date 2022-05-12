@@ -209,3 +209,15 @@ Make sure ~/megahit/megehit_individual/${i}_assembly/final.contigs.fa & ~/assemb
 ~/bioinformatic_shell_script/metacompare.sh
 #This script will rename final.contigs.fa to ${i}_final.contigs.fa as well
 ```
+
+## Sourcetracker2
+Prepare metatest.txt in ~/sourcetracker2  
+Change file name: ~/kraken2_bracken/${i}_kraken2.report to ~/kraken2_bracken/${i}.report
+  
+**Usage**
+```
+kraken-biom  ~/kraken2_bracken/*.report --max G
+mv ~/kraken2_bracken/table.biom ~/sourcetracker2
+conda activate st2
+sourcetracker2 gibbs -i ~/sourcetracker/table.biom -m ~/sourcetracker/metatest.txt  --source_rarefaction_depth 0 --sink_rarefaction_depth 0 -o sourcetracker.output
+```
