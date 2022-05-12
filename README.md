@@ -201,10 +201,11 @@ conda deactivate
 ```
 
 ## MetaCompare
-Create list in $\~/sample_list/clean_read_list
-Make sure ~/megahit/megehit_individual/${i}_assembly/final.contigs.fa & ~/assembly_prodigal/${i}_assembly.nucl exist
-  
+Create list in $\~/sample_list/clean_read_list  
+Make sure ~/megahit/megehit_individual/${i}_assembly/final.contigs.fa & ~/assembly_prodigal/${i}_assembly.nucl exist  
+
 **Usage** 
 ```
 ~/bioinformatic_shell_script/metacompare.sh
+#This script will rename final.contigs.fa to ${i}_final.contigs.fa
 ```
