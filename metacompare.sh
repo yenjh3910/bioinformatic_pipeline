@@ -5,8 +5,7 @@ cd ~/MetaCompare
 for i in $(<~/sample_list/clean_read_list)
 do
 #rename final contigs & move to ~/metacompare
-mv ~/megahit/megehit_individual/${i}_assembly/final.contigs.fa ~/megahit/megehit_individual/${i}_assembly/${i}_final.contigs.fa
-mv ~/megahit/megehit_individual/${i}_assembly/${i}_final.contigs.fa ~/MetaCompare
+mv ~/megahit/megehit_individual/${i}_assembly/final.contigs.fa ~/MetaCompare/${i}_final.contigs.fa
 #move prodigal nucl to ~/metacompare
 mv ~/assembly_prodigal/${i}_assembly.nucl ~/MetaCompare
 #run metacompare
