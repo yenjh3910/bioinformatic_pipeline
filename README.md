@@ -207,5 +207,5 @@ Make sure ~/megahit/megehit_individual/${i}_assembly/final.contigs.fa & ~/assemb
 **Usage** 
 ```
 ~/bioinformatic_shell_script/metacompare.sh
-#This script will rename final.contigs.fa to ${i}_final.contigs.fa
+#This script will rename final.contigs.fa to ${i}_final.contigs.fa as well
 ```
