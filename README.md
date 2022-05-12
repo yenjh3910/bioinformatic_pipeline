@@ -199,3 +199,8 @@ conda activate plasflow
 ~/bioinformatic_shell_script/plasflow.sh
 conda deactivate
 ```
+
+## MetaCompare
+```
+
+```
