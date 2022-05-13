@@ -219,5 +219,5 @@ Change file name: ~/kraken2_bracken/${i}_kraken2.report to ~/kraken2_bracken/${i
 kraken-biom  ~/kraken2_bracken/*.report --max G
 mv ~/kraken2_bracken/table.biom ~/sourcetracker2
 conda activate st2
-sourcetracker2 gibbs -i ~/sourcetracker2/table.biom -m ~/sourcetracker2/metatest.txt  --source_rarefaction_depth 0 --sink_rarefaction_depth 0 -o sourcetracker2.output
+sourcetracker2 gibbs -i ~/sourcetracker2/table.biom -m ~/sourcetracker2/metatest.txt -o ~/sourcetracker2/sourcetracker2.output --jobs [sinks numbers]
 ```
