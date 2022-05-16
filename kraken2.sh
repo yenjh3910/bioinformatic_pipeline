@@ -14,6 +14,4 @@ bracken -d ~/kraken_db -i ~/kraken2_bracken/${i}_kraken2.report -o ~/kraken2_bra
 bracken -d ~/kraken_db -i ~/kraken2_bracken/${i}_kraken2.report -o ~/kraken2_bracken/${i}.G.bracken -w ~/kraken2_bracken/${i}.G.bracken.report -r 150 -l G
 bracken -d ~/kraken_db -i ~/kraken2_bracken/${i}_kraken2.report -o ~/kraken2_bracken/${i}.S.bracken -w ~/kraken2_bracken/${i}.S.bracken.report -r 150 -l S
 
-ktImportTaxonomy -q 2 -t 3 ~/kraken2_bracken/${i}_kraken2.output -o ~/krona/${i}_krona
-
 done
