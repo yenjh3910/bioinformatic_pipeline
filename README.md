@@ -217,7 +217,8 @@ Change file name: ~/kraken2_bracken/${i}_kraken2.report to ~/kraken2_bracken/${i
 **Usage**
 ```
 cd ~/sourcetracker2
-kraken-biom  ~/kraken2_bracken/*.report --max G
+kraken-biom  ~/kraken2_bracken/*kraken2.report --max G --fmt tsv
+kraken-biom  ~/kraken2_bracken/*kraken2.report --max G
 conda activate st2
 sourcetracker2 gibbs -i ~/sourcetracker2/table.biom -m ~/sourcetracker2/metatest.txt -o ~/sourcetracker2/sourcetracker2.output --jobs [sinks numbers]
 ```
