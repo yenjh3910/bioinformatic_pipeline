@@ -7,4 +7,4 @@ do
 
 done
 
-~/KrakenTools-1.2/combine_mpa.py -i ~/kraken2_bracken/*_mpa.txt -o ~/kraken2_bracken/conbined_mpa.txt
+~/KrakenTools-1.2/combine_mpa.py -i ~/kraken2_bracken/*_mpa.txt -o ~/kraken2_bracken/combined_mpa.txt
