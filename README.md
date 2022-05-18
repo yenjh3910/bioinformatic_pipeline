@@ -31,7 +31,7 @@ Create meta-data.txt in $\~/sample_list
 
 **Usage**   
 ```   
-singularity exec -B ~/clean_read ~/arg-oap/argoapv2.5.sif /home/argsoapv2.5/argoap_version2.5 -i ~/clean_read -m ~/sample_list/meta-data.txt -o ~/arg-oap -n 16  -d   
+singularity exec -B ~/clean_read ~/arg-oap/argoapv2.5.sif /home/argsoapv2.5/argoap_version2.5 -i ~/clean_read -m ~/sample_list/meta-data.txt -o ~/arg-oap -n 16  -d -r  
 ```
 ## Functional profile
 ### HUMAnN 3.0   
