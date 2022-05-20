@@ -53,9 +53,10 @@ Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz
 Put all clean read file in $\~/clean_read   
 ```  
 #metawrap_coassembly
-gunzip ~/clean_read/*.gz
-cat ~/clean_read/*_1.fastq > ~/clean_read/all_reads_1.fastq
-cat ~/clean_read/*_2.fastq > ~/clean_read/all_reads_2.fastq
+cat ~/clean_read/*_1.fastq.gz > ~/clean_read/all_reads_1.fastq.gz
+cat ~/clean_read/*_2.fastq.gz > ~/clean_read/all_reads_2.fastq.gz  
+{Then remove all individual clean read manually}
+gunzip ~/clean_read/all_reads_1.fastq.gz ~/clean_read/all_reads_2.fastq.gz
 megahit -t 16 -m 0.95 -1 ~/clean_read/all_reads_1.fastq -2 ~/clean_read/all_reads_2.fastq --min-contig-len 1000 -o ~/megahit/megehit_coassembly   
 rm ~/clean_read/all_reads_1.fastq ~/clean_read/all_reads_2.fastq
 
