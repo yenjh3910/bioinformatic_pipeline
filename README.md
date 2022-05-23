@@ -62,6 +62,10 @@ rm ~/clean_read/all_reads_1.fastq ~/clean_read/all_reads_2.fastq
 
 megahit -t 16 -m 0.95 -1 AT1_1.fastq.gz,AT2_1.fastq.gz,AT3_1.fastq.gz,AT4_1.fastq.gz,AT5_1.fastq.gz,AP1_1.fastq.gz,AP2_1.fastq.gz,AP3_1.fastq.gz,AP4_1.fastq.gz,AP5_1.fastq.gz,OP1_1.fastq.gz,OP2_1.fastq.gz,OP3_1.fastq.gz,OP4_1.fastq.gz,OP5_1.fastq.gz -2 AT1_2.fastq.gz,AT2_2.fastq.gz,AT3_2.fastq.gz,AT4_2.fastq.gz,AT5_2.fastq.gz,AP1_2.fastq.gz,AP2_2.fastq.gz,AP3_2.fastq.gz,AP4_2.fastq.gz,AP5_2.fastq.gz,OP1_2.fastq.gz,OP2_2.fastq.gz,OP3_2.fastq.gz,OP4_2.fastq.gz,OP5_2.fastq.gz --min-contig-len 1000 -o ~/megahit/megehit_coassembly --presets meta-large
 
+bbnorm.sh in1=OP5_1.fastq in2=OP5_2.fastq out1=nOP5_1.fastq out2=nOP5_2.fastq target=70
+
+megahit -t 16 -m 0.95 -1 AT1_1.fastq,AT2_1.fastq,AT3_1.fastq,AT4_1.fastq,AT5_1.fastq,AP1_1.fastq,AP2_1.fastq,AP3_1.fastq,AP4_1.fastq,AP5_1.fastq,OP1_1.fastq,OP2_1.fastq,OP3_1.fastq,OP4_1.fastq,OP5_1.fastq -2 AT1_2.fastq,AT2_2.fastq,AT3_2.fastq,AT4_2.fastq,AT5_2.fastq,AP1_2.fastq,AP2_2.fastq,AP3_2.fastq,AP4_2.fastq,AP5_2.fastq,OP1_2.fastq,OP2_2.fastq,OP3_2.fastq,OP4_2.fastq,OP5_2.fastq --min-contig-len 1000 -o ~/megahit/megehit_coassembly
+
 #quast
 ~/quast-5.1.0rc1/quast.py ~/megahit/megehit_coassembly/final.contigs.fa -o ~/megahit/megehit_coassembly/coassembly_quast
 ```   
