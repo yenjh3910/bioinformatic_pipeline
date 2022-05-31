@@ -131,6 +131,10 @@ for i in {1..[number]}
   
 **Usage**  
 ```  
+#Edit shell script  
+vim ~/bioinformatic_shell_script/DIAMOND-blastx_abricate.sh 
+for i in {1..[number]} 
+
 ~/bioinformatic_shell_script/DIAMOND-blastx_abricate.sh  
 ```  
 
