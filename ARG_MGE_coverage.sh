@@ -35,22 +35,22 @@ for j in $(<~/sample_list/sample_type_list)
 do
 
 ##arg in vfarb
-bowtie2 -x ~/bowtie2/bin.${i}.arg.vfarb.bt2.index -1 ~/clean_read/${j}_1.fastq -2 ~/clean_read/${j}_2.fastq -S ${j}.bin.${i}.arg.vfarb.sam -p 16
+bowtie2 -x ~/bowtie2/bin.${i}.arg.vfarb.bt2.index -1 ~/clean_read/${j}_1.fastq.gz -2 ~/clean_read/${j}_2.fastq.gz -S ${j}.bin.${i}.arg.vfarb.sam -p 16
 pileup.sh in=${j}.bin.${i}.arg.vfarb.sam out=~/gene_coverage/arg_vfarb/${j}.bin.${i}.arg.vfarb.sam.map.txt
 rm ${j}.bin.${i}.arg.vfarb.sam
 
 ##arg in arb
-bowtie2 -x ~/bowtie2/bin.${i}.arg.arb.bt2.index -1 ~/clean_read/${j}_1.fastq -2 ~/clean_read/${j}_2.fastq -S ${j}.bin.${i}.arg.arb.sam -p 16
+bowtie2 -x ~/bowtie2/bin.${i}.arg.arb.bt2.index -1 ~/clean_read/${j}_1.fastq.gz -2 ~/clean_read/${j}_2.fastq.gz -S ${j}.bin.${i}.arg.arb.sam -p 16
 pileup.sh in=${j}.bin.${i}.arg.arb.sam out=~/gene_coverage/arg_arb/${j}.bin.${i}.arg.arb.sam.map.txt
 rm ${j}.bin.${i}.arg.arb.sam
 
 ##mge in vfarb
-bowtie2 -x ~/bowtie2/bin.${i}.mge.vfarb.bt2.index -1 ~/clean_read/${j}_1.fastq -2 ~/clean_read/${j}_2.fastq -S ${j}.bin.${i}.mge.vfarb.sam -p 16
+bowtie2 -x ~/bowtie2/bin.${i}.mge.vfarb.bt2.index -1 ~/clean_read/${j}_1.fastq.gz -2 ~/clean_read/${j}_2.fastq.gz -S ${j}.bin.${i}.mge.vfarb.sam -p 16
 pileup.sh in=${j}.bin.${i}.mge.vfarb.sam out=~/gene_coverage/mge_vfarb/${j}.bin.${i}.mge.vfarb.sam.map.txt
 rm ${j}.bin.${i}.mge.vfarb.sam
 
 ##mge in arb
-bowtie2 -x ~/bowtie2/bin.${i}.mge.arb.bt2.index -1 ~/clean_read/${j}_1.fastq -2 ~/clean_read/${j}_2.fastq -S ${j}.bin.${i}.mge.arb.sam -p 16
+bowtie2 -x ~/bowtie2/bin.${i}.mge.arb.bt2.index -1 ~/clean_read/${j}_1.fastq.gz -2 ~/clean_read/${j}_2.fastq.gz -S ${j}.bin.${i}.mge.arb.sam -p 16
 pileup.sh in=${j}.bin.${i}.mge.arb.sam out=~/gene_coverage/mge_arb/${j}.bin.${i}.mge.arb.sam.map.txt
 rm ${j}.bin.${i}.mge.arb.sam
 
