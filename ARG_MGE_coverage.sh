@@ -7,26 +7,26 @@ mkdir ~/gene_coverage/arg_arb
 mkdir ~/gene_coverage/mge_vfarb
 mkdir ~/gene_coverage/mge_arb
 
-for i in {1..36}
+for i in {1..129}
 do
 
 #Build index
 #the gtf file was prepared manually
 
 ##arg in vfarb
-seqkit subseq --gtf ~/ARG_MGE_manually_gtf/bin.${i}.nucl.uniq.ARGminer.dmnd.vfarb.gtf.txt ~/cdhit/bin.${i}.nucl.uniq -o ~/ARGs/bin.${i}.arg.vfarb.gtf.gene.fasta
+seqkit subseq --gtf ~/ARG_MGE_manually_gtf/ARG_in_VFARB/bin.${i}.nucl.uniq.ARGminer.dmnd.vfarb.gtf.txt ~/cdhit/bin.${i}.nucl.uniq -o ~/ARGs/bin.${i}.arg.vfarb.gtf.gene.fasta
 bowtie2-build ~/ARGs/bin.${i}.arg.vfarb.gtf.gene.fasta bin.${i}.arg.vfarb.bt2.index
 
 ##arg in arb
-seqkit subseq --gtf ~/ARG_MGE_manually_gtf/bin.${i}.nucl.uniq.ARGminer.dmnd.arb.gtf.txt ~/cdhit/bin.${i}.nucl.uniq -o ~/ARGs/bin.${i}.arg.arb.gtf.gene.fasta
+seqkit subseq --gtf ~/ARG_MGE_manually_gtf/ARG_in_ARB/bin.${i}.nucl.uniq.ARGminer.dmnd.arb.gtf.txt ~/cdhit/bin.${i}.nucl.uniq -o ~/ARGs/bin.${i}.arg.arb.gtf.gene.fasta
 bowtie2-build ~/ARGs/bin.${i}.arg.arb.gtf.gene.fasta bin.${i}.arg.arb.bt2.index
 
 ##mge in vfarb
-seqkit subseq --gtf ~/ARG_MGE_manually_gtf/bin.${i}.nucl.uniq.MGEs90.dmnd.vfarb.gtf.txt ~/cdhit/bin.${i}.nucl.uniq -o ~/MGEs/bin.${i}.mge.vfarb.gtf.gene.fasta
+seqkit subseq --gtf ~/ARG_MGE_manually_gtf/MGE_in_VFARB/bin.${i}.nucl.uniq.MGEs90.dmnd.vfarb.gtf.txt ~/cdhit/bin.${i}.nucl.uniq -o ~/MGEs/bin.${i}.mge.vfarb.gtf.gene.fasta
 bowtie2-build ~/MGEs/bin.${i}.mge.vfarb.gtf.gene.fasta bin.${i}.mge.vfarb.bt2.index
 
 ##mge in arb
-seqkit subseq --gtf ~/ARG_MGE_manually_gtf/bin.${i}.nucl.uniq.MGEs90.dmnd.arb.gtf.txt ~/cdhit/bin.${i}.nucl.uniq -o ~/MGEs/bin.${i}.mge.arb.gtf.gene.fasta
+seqkit subseq --gtf ~/ARG_MGE_manually_gtf/MGE_in_ARB/bin.${i}.nucl.uniq.MGEs90.dmnd.arb.gtf.txt ~/cdhit/bin.${i}.nucl.uniq -o ~/MGEs/bin.${i}.mge.arb.gtf.gene.fasta
 bowtie2-build ~/MGEs/bin.${i}.mge.arb.gtf.gene.fasta bin.${i}.mge.arb.bt2.index
 
 #Quantification coverage
