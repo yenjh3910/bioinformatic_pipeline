@@ -31,3 +31,8 @@ humann_renorm_table --input ~/humann/all_pathabundance.tsv --output ~/humann/all
 humann_regroup_table -i ~/humann/all_genefamilies.tsv -g uniref90_pfam -o ~/humann/all_genefamilies_regroup_pfam.tsv
 humann_rename_table --input ~/humann/all_genefamilies_regroup_pfam.tsv  --names pfam --output ~/humann/all_genefamilies_rename_pfam.tsv
 humann_renorm_table --input ~/humann/all_genefamilies_rename_pfam.tsv --output ~/humann/all_genefamilies_rename_pfam_cpm.tsv  --units cpm -s n
+
+##Regroup to GO
+humann_regroup_table -i ~/humann/all_genefamilies.tsv -g uniref90_go -o ~/humann/all_genefamilies_regroup_go.tsv
+humann_rename_table --input ~/humann/all_genefamilies_regroup_go.tsv  --names go --output ~/humann/all_genefamilies_rename_go.tsv
+humann_renorm_table --input ~/humann/all_genefamilies_rename_go.tsv --output ~/humann/all_genefamilies_rename_go_cpm.tsv  --units cpm -s n
