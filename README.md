@@ -235,3 +235,14 @@ kraken-biom  ~/kraken2_bracken/*kraken2.report --max G
 conda activate st2
 sourcetracker2 gibbs -i ~/sourcetracker2/table.biom -m ~/sourcetracker2/metatest.txt -o ~/sourcetracker2/sourcetracker2.output
 ```
+
+### DIAMOND-blastx (SARGs, VF)  
+  
+**Usage**  
+```  
+#Edit shell script  
+vim ~/bioinformatic_shell_script/SARG_virulence_factor_diamond.sh 
+for i in {1..[number]} 
+
+~/bioinformatic_shell_script/SARG_virulence_factor_diamond.sh
+```  
