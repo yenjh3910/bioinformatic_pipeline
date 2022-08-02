@@ -49,7 +49,7 @@ conda deactivate
 
 ## Binning pipeline
 ### Co-assembly (MEGAHIT)
-Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
+Clean read name as \\${i}_1.fastq.gz & ${i}_2.fastq.gz  
 Put all clean read file in $\~/clean_read   
 ```  
 #metawrap_coassembly
@@ -158,7 +158,7 @@ vim ~/bioinformatic_shell_script/ARG_MGE_coverage.sh
 
 ## ARG_Ranker
 ### Merge forward & reverse read  
-Clean read name as ${i}_1.fastq & ${i}_2.fastq  
+Clean read name as \\${i}_1.fastq & ${i}_2.fastq  
 Put all clean read file in $\~/clean_read   
 Create list in $\~/sample_list/clean_read_list  
 
@@ -179,7 +179,7 @@ sh /home/yen/arg_ranker_output/script_output//arg_ranker.sh
 ## ARG chromosome & plasmid distribution
 ### Assembly, Prodigal & ARG blastx
 #### Individual read assembly
-Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
+Clean read name as \\${i}_1.fastq.gz & ${i}_2.fastq.gz  
 Put all clean read file in $\~/clean_read   
 Create list in $\~/sample_list/clean_read_list  
 
