@@ -14,7 +14,7 @@ Create list in $\~/sample_list/clean_read_list
 
 ## ARG profile
 ### DeepARG
-Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
+Clean read name as \\${i}_1.fastq.gz & ${i}_2.fastq.gz  
 Put all clean read file in $\~/clean_read   
 Create list in $\~/sample_list/clean_read_list
 
@@ -26,7 +26,7 @@ conda deactivate
 ```
 
 ### ARG-OAP
-Clean read name as ${i}_1.fq.gz & ${i}_2.fq.gz  
+Clean read name as \\${i}_1.fq.gz & ${i}_2.fq.gz  
 Create meta-data.txt in $\~/sample_list 
 
 **Usage**   
@@ -36,7 +36,7 @@ singularity exec -B ~/clean_read ~/arg-oap/argoapv2.5.sif /home/argsoapv2.5/argo
 ## Functional profile
 ### HUMAnN 3.0   
 Make sure ~/humann_database exists
-Clean read name as ${i}_1.fastq.gz & ${i}_2.fastq.gz  
+Clean read name as \\${i}_1.fastq.gz & ${i}_2.fastq.gz  
 Put all clean read file in $\~/clean_read   
 Create list in $\~/sample_list/clean_read_list
 
