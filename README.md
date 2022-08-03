@@ -246,3 +246,20 @@ for i in {1..[number]}
 
 ~/bioinformatic_shell_script/SARG_MGEs_VFs_diamond.sh
 ```  
+### Seqkit_Bowtie2_BBmap (genes coverage quantification)
+#### R script
+make sure **$//wsl$/Ubuntu/home/yen/manual_gtf_2.0/** exist  
+run **diamond_SARG_MGE_VF.R**  
+remove 0kb file in $//wsl$/Ubuntu/home/yen/ARG_MGE_manually_gtf/  
+#### shell script 
+Create  $\~/sample_list/sample_type_list 
+  
+  
+**Usage**  
+```  
+#change for loop i to bin numbers
+vim ~/bioinformatic_shell_script/SARG_MGE_VF_coverage.sh 
+  
+#run
+~/bioinformatic_shell_script/SARG_MGE_VF_coverage.sh
+```
