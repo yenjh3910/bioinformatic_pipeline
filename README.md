@@ -236,7 +236,7 @@ conda activate st2
 sourcetracker2 gibbs -i ~/sourcetracker2/table.biom -m ~/sourcetracker2/metatest.txt -o ~/sourcetracker2/sourcetracker2.output
 ```
 
-### DIAMOND-blastx (SARGs, VF)  
+### DIAMOND-blastx (SARGs, MGEs , VFs)  
   
 **Usage**  
 ```  
