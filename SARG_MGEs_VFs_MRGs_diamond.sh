@@ -3,7 +3,7 @@
 mkdir ~/ARGs_SARG
 mkdir ~/MGEs_2.0
 mkdir ~/VFs_2.0
-mkdir~/MRGs_2.0
+mkdir ~/MRGs_2.0
 
 for i in {1..129}
 do
