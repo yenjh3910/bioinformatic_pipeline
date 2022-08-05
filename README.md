@@ -241,10 +241,10 @@ sourcetracker2 gibbs -i ~/sourcetracker2/table.biom -m ~/sourcetracker2/metatest
 **Usage**  
 ```  
 #Edit shell script  
-vim ~/bioinformatic_shell_script/SARG_MGEs_VFs_diamond.sh 
+vim ~/bioinformatic_shell_script/SARG_MGEs_VFs_MRGs_diamond.sh 
 for i in {1..[number]} 
 
-~/bioinformatic_shell_script/SARG_MGEs_VFs_diamond.sh
+~/bioinformatic_shell_script/SARG_MGEs_VFs_MRGs_diamond.sh
 ```  
 ### Seqkit_Bowtie2_BBmap (genes coverage quantification)
 #### R script
