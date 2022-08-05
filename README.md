@@ -258,8 +258,8 @@ Create  $\~/sample_list/sample_type_list
 **Usage**  
 ```  
 #change for loop i to bin numbers
-vim ~/bioinformatic_shell_script/SARG_MGE_VF_coverage.sh 
+vim ~/bioinformatic_shell_script/SARG_MGE_MRG_coverage.sh 
   
 #run
-~/bioinformatic_shell_script/SARG_MGE_VF_coverage.sh
+~/bioinformatic_shell_script/SARG_MGE_MRG_coverage.sh
 ```
