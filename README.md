@@ -281,6 +281,15 @@ conda deactivate
 #CD-HIT & diamond
 ~/bioinformatic_shell_script/individual_assembly_diamond.sh
 ```
+### Individual_assembly_plasflow
+
+**Usage**  
+```  
+conda activate plasflow
+~/bioinformatic_shell_script/indiv_assembly_Plasflow.sh
+conda deactivate
+```
+
 ### contigs_taxa_kraken2
 
 **Usage**  
