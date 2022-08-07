@@ -280,7 +280,7 @@ conda deactivate
 #CD-HIT & diamond
 ~/bioinformatic_shell_script/individual_assembly_diamond.sh
 ```
-###contigs_taxa_kraken2
+### contigs_taxa_kraken2
 
 **Usage**  
 ```  
