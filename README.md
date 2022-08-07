@@ -269,7 +269,8 @@ vim ~/bioinformatic_shell_script/SARG_MGE_MRG_coverage.sh
 **Usage**  
 ```  
 conda activate plasflow
-~/bioinformatic_shell_script/binning_Plasflow.sh
+mkdir ~/Binning_PlasFlow
+PlasFlow.py --input ~/megahit_coassembly/final.contigs.fa --output ~/Binning_PlasFlow/coassembly.plasflow_predictions.tsv --threshold 0.7
 conda deactivate
 ```
 
