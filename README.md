@@ -272,3 +272,11 @@ conda activate plasflow
 ~/bioinformatic_shell_script/binning_Plasflow.sh
 conda deactivate
 ```
+
+## Individual assembly (diamond_SARG_MGE_MRG)
+
+**Usage**  
+```  
+#CD-HIT & diamond
+~/bioinformatic_shell_script/individual_assembly_diamond.sh
+```
