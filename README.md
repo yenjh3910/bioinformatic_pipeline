@@ -303,3 +303,10 @@ conda deactivate
 ``` 
 ~/bioinformatic_shell_script/coverage_indi_ARG_contigs.sh
 ``` 
+
+### ARG_contigs_ORF
+
+**Usage**  
+``` 
+~/bioinformatic_shell_script/coverage_indi_ARG_ORF.sh
+``` 
