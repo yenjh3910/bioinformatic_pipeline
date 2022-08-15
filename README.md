@@ -296,3 +296,10 @@ conda deactivate
 ```  
 ~/bioinformatic_shell_script/contigs_kraken2.sh
 ```
+
+### ARG_contigs_coverage
+
+**Usage**  
+``` 
+~/bioinformatic_shell_script/coverage_indi_ARG_contigs.sh
+``` 
