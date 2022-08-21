@@ -36,3 +36,8 @@ humann_renorm_table --input ~/humann/all_genefamilies_rename_pfam.tsv --output ~
 humann_regroup_table -i ~/humann/all_genefamilies.tsv -g uniref90_go -o ~/humann/all_genefamilies_regroup_go.tsv
 humann_rename_table --input ~/humann/all_genefamilies_regroup_go.tsv  --names go --output ~/humann/all_genefamilies_rename_go.tsv
 humann_renorm_table --input ~/humann/all_genefamilies_rename_go.tsv --output ~/humann/all_genefamilies_rename_go_cpm.tsv  --units cpm -s n
+
+##Regroup to EGGNOG
+humann_regroup_table -i ~/humann/all_genefamilies.tsv -g uniref90_eggnog -o ~/humann/all_genefamilies_regroup_eggnog.tsv
+humann_rename_table --input ~/humann/all_genefamilies_regroup_eggnog.tsv  --names eggnog --output ~/humann/all_genefamilies_rename_eggnog.tsv
+humann_renorm_table --input ~/humann/all_genefamilies_rename_eggnog.tsv --output ~/humann/all_genefamilies_rename_eggnog_cpm.tsv  --units cpm -s n
