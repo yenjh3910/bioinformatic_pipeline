@@ -44,5 +44,5 @@ humann_renorm_table --input ~/humann/all_genefamilies_rename_eggnog.tsv --output
 
 ##Regroup to KEGG
 humann_regroup_table -i ~/humann/all_genefamilies.tsv -g uniref90_ko -o ~/humann/all_genefamilies_regroup_ko.tsv
-humann_rename_table --input ~/humann/all_genefamilies_regroup_ko.tsv  --names ko --output ~/humann/all_genefamilies_rename_ko.tsv
-humann_renorm_table --input ~/humann/all_genefamilies_rename_ko.tsv --output ~/humann/all_genefamilies_rename_ko_cpm.tsv  --units cpm -s n
+humann_rename_table --input ~/humann/all_genefamilies_regroup_ko.tsv  --names kegg-orthology --output ~/humann/all_genefamilies_rename_kegg-orthology.tsv
+humann_renorm_table --input ~/humann/all_genefamilies_rename_kegg-orthology.tsv --output ~/humann/all_genefamilies_rename_kegg-orthology_cpm.tsv  --units cpm -s n
